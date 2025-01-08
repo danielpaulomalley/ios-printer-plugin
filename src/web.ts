@@ -7,4 +7,8 @@ export class IOSPrinterPluginWeb extends WebPlugin implements IOSPrinterPluginPl
     console.log('ECHO', options);
     return options;
   }
+
+  async printImage(img: string): Promise<void> {
+    console.log("IMG", img)
+  }
 }
